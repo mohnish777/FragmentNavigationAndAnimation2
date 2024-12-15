@@ -28,6 +28,10 @@ class HomeFragment : Fragment() {
         binding.termsButton.setOnClickListener{
             it.findNavController().navigate(R.id.termsFragment)
         }
+
+        binding.coroutineScreenBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.enterToCouroutinesFragment)
+        }
         return  binding.root
     }
 }

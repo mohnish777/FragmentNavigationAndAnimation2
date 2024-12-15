@@ -24,6 +24,9 @@
             app:exitAnim="@anim/push_down_out"
             app:popEnterAnim="@anim/push_up_out"
             app:popExitAnim="@anim/push_up_in" />
+        <action
+            android:id="@+id/action_homeFragment_to_enterToCouroutinesScreen"
+            app:destination="@id/enterToCouroutinesFragment" />
     </fragment>
     <fragment
         android:id="@+id/nameFragment"
@@ -70,4 +73,9 @@
         android:name="com.anushka.navdemo5.TermsFragment"
         android:label="fragment_terms"
         tools:layout="@layout/fragment_terms"/>
+    <fragment
+        android:id="@+id/enterToCouroutinesFragment"
+        android:name="com.anushka.navdemo5.EnterToCouroutinesScreen"
+        android:label="fragment_enter_to_couroutines_screen"
+        tools:layout="@layout/fragment_enter_to_couroutines_screen" />
 </navigation>
