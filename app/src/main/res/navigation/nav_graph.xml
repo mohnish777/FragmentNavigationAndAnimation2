@@ -5,6 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.anushka.navdemo5.HomeFragment"
@@ -77,5 +78,14 @@
         android:id="@+id/enterToCouroutinesFragment"
         android:name="com.anushka.navdemo5.EnterToCouroutinesScreen"
         android:label="fragment_enter_to_couroutines_screen"
-        tools:layout="@layout/fragment_enter_to_couroutines_screen" />
+        tools:layout="@layout/fragment_enter_to_couroutines_screen" >
+        <action
+            android:id="@+id/action_enterToCouroutinesFragment_to_enterToCouroutinesFragment2"
+            app:destination="@id/enterToCouroutinesFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterToCouroutinesFragment2"
+        android:name="com.anushka.navdemo5.EnterToCouroutinesScreen2"
+        android:label="fragment_enter_to_couroutines_screen2"
+        tools:layout="@layout/fragment_enter_to_couroutines_screen2"/>
 </navigation>

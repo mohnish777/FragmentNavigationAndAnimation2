@@ -18,17 +18,19 @@
         android:text="Dowload User Data"
         app:layout_constraintBottom_toTopOf="@+id/incrementBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/userDataText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="136dp"
         app:layout_constraintBottom_toTopOf="@+id/dwndUserData"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -51,6 +53,18 @@
         android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toTopOf="@+id/incrementBtn"
         app:layout_constraintStart_toStartOf="@+id/incrementBtn" />
+
+    <Button
+        android:id="@+id/fragNavigateto2nd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Click to navigate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dwndUserData"
+        app:layout_constraintVertical_bias="0.831" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
