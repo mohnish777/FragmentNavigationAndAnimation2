@@ -44,7 +44,7 @@ class EnterToCouroutinesScreen2 : Fragment() {
         binding.dwndUserData.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch{
                 binding.userDataText.text = UserDataManager().getUserDataTotalCount().toString()
-                binding.userDataText2.text = UserDataManager().getUserDataTotalCount2().toString()
+                binding.userDataText2.text = UserDataManager2().getUserDataTotalCount().toString()
             }
         }
 
